@@ -1,0 +1,250 @@
+body{
+    background: rgb(141,185,240);
+    background: radial-gradient(circle, rgba(141,185,240,1) 0%, rgba(46,130,228,1) 100%);
+}
+
+.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.back-to-top {
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    background-color: rgb(145, 255, 130);
+    border-radius: 25%;
+    padding: 0.5rem;
+    border: none;
+    cursor: pointer;
+    visibility: 100%;
+    transition: opacity 0.5s;
+}
+
+.back-to-top-icon {
+    width: 2rem;
+    height: 2rem;
+    color: #7ac9f9;
+}
+
+.back-to-top:hover {
+    opacity: 60%;
+}
+
+.container{
+    align-items: center;
+    justify-content: center;
+}
+
+#main-content{
+    text-align: center;
+}
+
+.w-40{
+    width: 40% !important;
+}
+
+.title{
+    font-family: 'Teko', sans-serif;
+    font-size: 14rem;
+    font-weight: 1000;
+    padding: 0px;
+    margin: 0;
+    line-height: 13rem;
+    background-image: linear-gradient(5deg, #b6bb7b, #95ffa8);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    
+}
+
+.subtitle{
+    color: rgb(255, 255, 255);
+    font-family: 'Teko', sans-serif;
+    font-size: 4rem;
+    font-weight: 1000;
+    text-shadow: 5px 5px 10px rgb(0, 0, 0);
+    padding: 20px;
+    padding-top: 0px;
+    line-height: 1rem;
+    
+}
+
+#buttons{
+    align-items: center;
+}
+
+.button{
+    font-family: 'Teko', sans-serif;
+    font-size: 2.3rem;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    line-height: 65px;
+    width: 10rem;
+    margin: 5px;
+    background-image:  linear-gradient(45deg, #b6bb7b, #95ffa8);
+    box-shadow: 1px 1px 10px rgb(0, 0, 0);
+}
+
+.button:hover{
+    text-decoration: none;
+    transition: all 0.5s;
+    background-image:  linear-gradient(0deg, #b6bb7b, #95ffa8);
+    color: rgb(4, 119, 169);
+}
+
+
+h2{
+    color: rgb(255, 255, 255);
+    font-family: 'Teko', sans-serif;
+    font-size: 3rem;
+    font-weight: 1000;
+    text-shadow: 3px 3px 5px rgb(0, 0, 0);
+    margin-bottom: 25px;
+}
+
+h3{
+    font-family: 'Familjen Grotesk', sans-serif;
+    text-decoration: underline;
+}
+
+p{
+    font-family: 'Familjen Grotesk', sans-serif;
+    color: rgb(251, 255, 139);
+    font-size: 1.6rem;
+}
+
+.photo{
+    width: 600px;
+    height: 410px;
+    border-radius: 10% 10% 0% 0%;
+    object-fit: cover;
+}
+
+figcaption{
+    font-family: 'Patua One', cursive;
+    font-size: 2em;
+    color: rgb(255, 255, 255);
+    font-weight: 100;
+    background-image:  linear-gradient(0deg, #b6bb7b, #95ffa8);
+    text-shadow: 1px 1px 5px black;
+    padding: 10px;
+    width: 100%;
+    margin: 0px auto;
+    border-radius: 0.5em / 30%;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+#contact{
+    color: rgb(240, 240, 240);
+    padding: 25px;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 3rem;
+    height: 10em;
+    justify-content: center;
+}
+
+#contact-links > a{
+    color: rgb(118, 118, 118);
+    margin: 20px;
+    padding: 5px;
+    width: 1.5em;
+    height: 1.4em;
+}
+
+#contact-links > a:link{
+    color: rgb(255, 255, 255);
+}
+
+
+#contact-links > a:hover{
+    border: 1px solid white;
+}
+
+footer{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.15rem;
+    font-weight: 500;
+}
+
+/*************************************************************************************/
+
+@media (min-width: 320px) and (max-width:767px){
+    #logo{
+        width: 90% !important;
+    }
+    .title{
+        font-size: 7rem;
+        line-height: 100px;
+    }
+
+    .subtitle{
+        font-size: 3.5rem;
+        line-height: 60px;
+        margin-bottom: 5px;
+    }
+
+    .photo{
+        width: 300px;
+        height: 250px;
+    }
+
+    figcaption{
+        font-size: 1.39em;
+    }
+}
+
+@media  (min-width: 768px) and (max-width: 992px){
+    #logo{
+        width: 70% !important;
+    }
+
+    .title{
+        font-size: 10rem;
+        line-height: 160px;
+    }
+
+    .button{
+        margin: 10px;
+        font-size: 2.9rem;
+        width: 12rem;
+    }
+
+    #Portfolio{
+        margin-top: 120px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px){
+    #logo{
+        width: 70% !important;
+    }
+
+    .subtitle{
+        font-size: 5.1rem;
+    }
+
+    .button{
+        margin: 10px;
+        margin-top: 20px;
+        font-size: 3.6rem;
+        line-height: 82px;
+        width: 15rem;
+        height: 5rem;
+    }
+
+    #Portfolio{
+        margin-top: 150px;
+    }
+}
+
+@media (min-width: 1200px) and (max-width:1440px){
+    #logo{
+        width: 35% !important;
+    }
+}
+
