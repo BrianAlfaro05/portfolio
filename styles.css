@@ -118,8 +118,8 @@ p{
 }
 
 .photo{
-    width: 590px;
-    height: 300px;
+    width: 900px;
+    height: 500px;
     border-radius: 10% 10% 0% 0%;
     object-fit: cover;
 }
