@@ -1,3 +1,2 @@
 cynbubs-site.gif filter=lfs diff=lfs merge=lfs -text
 carmelitas-site.gif filter=lfs diff=lfs merge=lfs -text
-*.gif filter=lfs diff=lfs merge=lfs -text
